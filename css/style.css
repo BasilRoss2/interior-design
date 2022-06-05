@@ -249,13 +249,58 @@
     .b-about-us__text {
         margin-bottom: 66px;
     }
+    /*Testimonials*/
     
     .b-testimonials {
-        padding: 131px 547px 156px 545px;
+        padding: 131px 547px 96px 545px;
         display: flex;
         flex-direction: column;
+        background: #F1E9E6;
+    }
+    
+    .b-testimonials__testimonial-container {
+        display: flex;
     }
     
     .b-testimonials__header {
         align-self: center;
+        margin-bottom: 70px;
+    }
+    
+    .testimonial-container__header {
+        font: 600 20px/1.3 'Montserrat', sans-serif;
+        color: #000000;
+    }
+    
+    .testimonial-container__text-container {
+        margin-bottom: 60px;
+        padding: 32px 52px 36px 43.5px;
+        background: #FFFFFF;
+        border-radius: 10px;
+    }
+    /*Projects*/
+    
+    .b-projects {
+        padding: 128px 135px 121px 140px;
+    }
+    
+    .b-projects__header-container {
+        margin-bottom: 46px;
+    }
+    
+    .b-projects__slider {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .b-projects__slider-slide {
+        margin-right: 40px;
+    }
+    
+    .b-slider-slide__image {
+        margin-bottom: 29px;
+    }
+    
+    .b-lead-form {
+        padding: 95px 0;
     }
