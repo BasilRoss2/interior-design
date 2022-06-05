@@ -89,7 +89,7 @@
     }
     
     .b-secuence__header {
-        width: 67%;
+        width: 70%;
         position: relative;
         font: 28px/1.2 'Montserrat', sans-serif;
         color: #404040;
@@ -262,6 +262,19 @@
         display: flex;
     }
     
+    .b-testimonials__testimonial-container_reverse {
+        flex-direction: row-reverse;
+    }
+    
+    .testimonial-container__photo {
+        margin-right: 50px;
+    }
+    
+    .testimonial-container__photo_reverse {
+        margin-right: 0;
+        margin-left: 50px;
+    }
+    
     .b-testimonials__header {
         align-self: center;
         margin-bottom: 70px;
@@ -270,6 +283,7 @@
     .testimonial-container__header {
         font: 600 20px/1.3 'Montserrat', sans-serif;
         color: #000000;
+        margin-bottom: 12px;
     }
     
     .testimonial-container__text-container {
@@ -297,10 +311,102 @@
         margin-right: 40px;
     }
     
+    .slider-slide__text {
+        line-height: 32px;
+    }
+    
     .b-slider-slide__image {
         margin-bottom: 29px;
     }
+    /*Lead form*/
     
     .b-lead-form {
         padding: 95px 0;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        max-width: 40%;
+    }
+    
+    .b-lead-form__header {
+        text-align: center;
+        margin-bottom: 67px;
+    }
+    
+    .b-lead-form__lead-form {
+        align-self: center;
+    }
+    
+    .lead-form__field {
+        width: 313px;
+        background: #FFF;
+        padding: 10px 0 10px 16px;
+        border: 1px solid #000;
+        border-radius: 5px 0px 0px 5px;
+        font: 18px/1.33 'Sarala', sans-serif;
+        color: #000;
+        opacity: 0.3;
+    }
+    
+    .lead-form__field:focus {
+        opacity: 1;
+    }
+    
+    .b-lead-form__lead-form {
+        display: flex;
+    }
+    
+    .lead-form__button {
+        width: 186px;
+        height: 56px;
+        background: #18191F;
+        border-radius: 0px 5px 5px 0px;
+    }
+    /*Footer*/
+    
+    .b-footer {
+        margin: 0 135px;
+        padding: 36px 0;
+        border-top: 1px solid #000;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .footer__social-links-wrapper {
+        display: flex;
+    }
+    
+    .footer__social-link {
+        width: 40px;
+        height: 40px;
+        background: rgba(47, 51, 55, 0.1);
+        border-radius: 4px;
+        margin-left: 27px;
+        position: relative;
+    }
+    
+    .footer__social-link::before {
+        display: block;
+        position: absolute;
+        top: 9px;
+        left: 9px;
+    }
+    
+    .footer__social-link_instagram::before {
+        content: url(/images/social-links/instagram.png);
+    }
+    
+    .footer__social-link_dribbble::before {
+        content: url(/images/social-links/Dribbble.png);
+    }
+    
+    .footer__social-link_twitter::before {
+        content: url(/images/social-links/Twitter.png);
+        top: 12px;
+    }
+    
+    .footer__social-link_youtube::before {
+        content: url(/images/social-links/youtube.png);
+        top: 12px;
     }
