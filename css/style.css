@@ -15,11 +15,7 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        background-image: url(../images/b-top-background.jpg);
-        background-position: center center;
-        background-size: cover;
-        background-attachment: scroll;
-        background-repeat: no-repeat;
+        background: center / cover no-repeat url(../images/b-top-background.jpg) scroll;
     }
     
     .header {
@@ -39,6 +35,23 @@
         font: 500 18px/18px 'Montserrat', sans-serif;
         color: #FFF;
         margin-left: 60px;
+        position: relative;
+    }
+    
+    .menu__link::after {
+        content: "";
+        position: absolute;
+        display: block;
+        background-color: #FFF;
+        bottom: -3px;
+        width: 100%;
+        height: 1px;
+        opacity: 0;
+        transition: opacity 0.3s;
+    }
+    
+    .menu__link:hover::after {
+        opacity: 1;
     }
     
     .b-top__content {
@@ -58,9 +71,24 @@
         width: 277px;
         height: 56px;
         font: 18px/24px 'Sarala', sans-serif;
+    }
+    
+    .button_transparent {
         color: #FFF;
         border: 1px solid #FFF;
-        background: none;
+        background-color: rgba(255, 255, 255, 0);
+        transition: background-color 0.2s;
+    }
+    
+    .button_transparent:hover {
+        color: #000;
+        background-color: rgba(255, 255, 255, 1);
+    }
+    
+    .button_transparent:active {
+        color: rgb(255, 255, 255);
+        background-color: rgba(37, 37, 37, 0.3);
+        border: 1px solid rgba(0, 0, 0, 0.3);
     }
     
     .b-top__slider {
@@ -203,7 +231,21 @@
     
     .button_thick {
         border: none;
-        background-color: #000;
+        color: #FFF;
+        background-color: rgba(0, 0, 0, 1);
+        transition: background-color 0.2s;
+        border: 1px solid rgb(0, 0, 0);
+    }
+    
+    .button_thick:hover {
+        color: #000;
+        background-color: rgba(255, 0, 0, 0);
+    }
+    
+    .button_thick:active {
+        color: rgb(255, 255, 255);
+        background-color: rgba(0, 0, 0, 0.3);
+        border: 1px solid rgba(0, 0, 0, 0.3);
     }
     
     .b-order-with-slider__header {
