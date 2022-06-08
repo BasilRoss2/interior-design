@@ -2,11 +2,10 @@
         padding: 0;
         margin: 0;
     }
-
     /*Buttons*/
-
-.hidden-image{
-}
+    
+    .hidden-image {}
+    
     .button {
         width: 277px;
         height: 56px;
@@ -31,7 +30,7 @@
         background-color: rgba(0, 0, 0, 0.3);
         border: 1px solid rgba(0, 0, 0, 0.3);
     }
-
+    
     .button_transparent {
         color: #FFF;
         border: 1px solid #FFF;
@@ -49,7 +48,6 @@
         background-color: rgba(37, 37, 37, 0.3);
         border: 1px solid rgba(0, 0, 0, 0.3);
     }
-    
     
     .page-wrapper {
         max-width: 6144px;
@@ -247,8 +245,8 @@
         width: 40%;
         font-size: 0;
     }
-
-    .b-moodboard__front-image{
+    
+    .b-moodboard__front-image {
         width: 100%;
     }
     /*Order-with-slider*/
@@ -259,12 +257,11 @@
         display: flex;
         flex-direction: column;
     }
-
-    .b-order-with-slider__wrapper{
+    
+    .b-order-with-slider__wrapper {
         margin-bottom: 192px;
     }
     
-
     .b-order-with-slider__header {
         margin-bottom: 32px;
     }
@@ -272,25 +269,39 @@
     .b-order-with-slider__text {
         margin-bottom: 26px;
     }
-
-    .b-order-with-slider__slider-wrapper{
+    
+    .b-order-with-slider__slider-head {
         display: flex;
-        width: 1335px;
+        width: 70%;
         height: 46px;
-        background: #F7F7F7;
+        background-color: #F7F7F7;
         border-radius: 16px;
         align-self: center;
     }
-
-/*Dummy block*/
-
+    
+    .slider-circle__container {
+        display: flex;
+        margin: 15px 0 0 20px;
+        justify-content: space-around;
+        width: 70px;
+        z-index: 2;
+    }
+    
+    .circle {
+        width: 16px;
+        height: 16px;
+        background: #C4C4C4;
+        opacity: 0.4;
+        border-radius: 50px;
+    }
+    /*Dummy block*/
+    
     .b-dummy {
         height: 80vh;
         background: #232323;
     }
+    /*advantages*/
     
-/*advantages*/
-
     .b-advantages {
         padding: 157px 340px;
         display: flex;
@@ -313,6 +324,10 @@
     
     .b-about-us__image-container {
         max-width: 50%;
+    }
+    
+    .b-about-us__image {
+        height: 100%;
     }
     
     .b-about-us__text-container {
@@ -376,12 +391,26 @@
     }
     
     .b-projects__header-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
         margin-bottom: 46px;
     }
     
     .b-projects__slider {
         display: flex;
         justify-content: space-between;
+    }
+    
+    .b-projects__slider-navigation {
+        display: flex;
+        justify-content: space-between;
+        width: 70px;
+    }
+    
+    .slider__arrow_disabled {
+        opacity: 0.2;
     }
     
     .b-projects__slider-slide {
