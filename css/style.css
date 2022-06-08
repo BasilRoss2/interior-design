@@ -5,7 +5,8 @@
 
     /*Buttons*/
 
-
+.hidden-image{
+}
     .button {
         width: 277px;
         height: 56px;
@@ -242,8 +243,13 @@
     .b-moodboard__front-images {
         display: flex;
         flex-wrap: wrap;
+        box-sizing: border-box;
         width: 40%;
         font-size: 0;
+    }
+
+    .b-moodboard__front-image{
+        width: 100%;
     }
     /*Order-with-slider*/
     
