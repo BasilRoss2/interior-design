@@ -14,9 +14,25 @@
         rel="stylesheet">
     <link rel="prefetch prerender" as="image" href="./images/b-top-background-2.jpg">
     <link rel="prefetch prerender" as="image" href="./images/b-top-background-3.jpg">
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet" />
 </head>
 
 <body>
+    <!-- <div class="item" data-aos="fade-up">1</div> 
+    <div class="item" data-aos="fade-down">2</div>
+    <div class="item" data-aos="fade-right">3</div>
+    <div class="item" data-aos="fade-left">4</div>
+
+    <div class="item" data-aos="zoom-in">5</div>
+    <div class="item" data-aos="zoom-out">6</div>
+
+    <div class="item" data-aos="slide-up">7</div>
+
+    <div class="item" data-aos="flip-up">8</div>
+    <div class="item" data-aos="flip-down">9</div>
+    <div class="item" data-aos="flip-right">10</div>
+    <div class="item" data-aos="flip-left">11</div>-->
+
     <div class="page-wrapper">
         <div class="b-top">
             <header class="header">
@@ -38,7 +54,7 @@
                 <span class="b-top__slder-switcher" id="b-top__slder-switcher-3"></span>
             </div>
         </div>
-        <div class="b-sequence">
+        <div class="b-sequence" data-aos="slide-up">
             <h2 class="b-secuence__header">Наша задача — помочь вам сформулировать, что такое идеальный интерьер именно для вас, вложить в ваш проект весь наш талант и опыт.</h2>
             <div class="b-sequence__wrapper">
                 <div class="b-sequence__container">
@@ -58,7 +74,7 @@
                 </div>
             </div>
         </div>
-        <div class="b-moodboard">
+        <div class="b-moodboard" data-aos="slide-up">
             <div class="b-moodboard__wrapper">
                 <div class="b-moodboard__content-container">
                     <div class="b-moodboard__text-container">
@@ -86,9 +102,9 @@
             <div class="b-order-with-slider__slider-container">
                 <div class="b-order-with-slider__slider-head">
                     <div class="slider-circle__container">
-                        <span class="cirlce"> </span>
-                        <span class="cirlce"> </span>
-                        <span class="cirlce"> </span>
+                        <span class="cirlce"></span>
+                        <span class="cirlce"></span>
+                        <span class="cirlce"></span>
                     </div>
                 </div>
                 <div class="b-order-with-slider__slider">
@@ -97,24 +113,40 @@
                         <img class="slider__item" src="./images/slider-pictures/item4.png" alt="">
                         <img class="slider__item" src="./images/slider-pictures/item2.png" alt="">
                         <img class="slider__item" src="./images/slider-pictures/item3.png" alt="">
-                    </div>
-                    <div class="slider__column">
                         <img class="slider__item" src="./images/slider-pictures/item.png" alt="">
                         <img class="slider__item" src="./images/slider-pictures/item4.png" alt="">
                         <img class="slider__item" src="./images/slider-pictures/item2.png" alt="">
                         <img class="slider__item" src="./images/slider-pictures/item3.png" alt="">
                     </div>
                     <div class="slider__column">
-                        <img class="slider__item" src="./images/slider-pictures/item.png" alt="">
-                        <img class="slider__item" src="./images/slider-pictures/item4.png" alt="">
-                        <img class="slider__item" src="./images/slider-pictures/item2.png" alt="">
-                        <img class="slider__item" src="./images/slider-pictures/item3.png" alt="">
+                        <img class="slider__item" src="./images/slider-pictures/item5.png" alt="">
+                        <img class="slider__item" src="./images/slider-pictures/item6.png" alt="">
+                        <img class="slider__item" src="./images/slider-pictures/item7.png" alt="">
+                        <img class="slider__item" src="./images/slider-pictures/item8.png" alt="">
+                        <img class="slider__item" src="./images/slider-pictures/item5.png" alt="">
+                        <img class="slider__item" src="./images/slider-pictures/item6.png" alt="">
+                        <img class="slider__item" src="./images/slider-pictures/item7.png" alt="">
+                        <img class="slider__item" src="./images/slider-pictures/item8.png" alt="">
                     </div>
                     <div class="slider__column">
+                        <img class="slider__item" src="./images/slider-pictures/item9.png" alt="">
+                        <img class="slider__item" src="./images/slider-pictures/item10.png" alt="">
+                        <img class="slider__item" src="./images/slider-pictures/item11.png" alt="">
+                        <img class="slider__item" src="./images/slider-pictures/item12.png" alt="">
+                        <img class="slider__item" src="./images/slider-pictures/item9.png" alt="">
+                        <img class="slider__item" src="./images/slider-pictures/item10.png" alt="">
+                        <img class="slider__item" src="./images/slider-pictures/item11.png" alt="">
+                        <img class="slider__item" src="./images/slider-pictures/item12.png" alt="">
+                    </div>
+                    <div class="slider__column">
+                        <img class="slider__item" src="./images/slider-pictures/item13.png" alt="">
                         <img class="slider__item" src="./images/slider-pictures/item.png" alt="">
-                        <img class="slider__item" src="./images/slider-pictures/item4.png" alt="">
                         <img class="slider__item" src="./images/slider-pictures/item2.png" alt="">
-                        <img class="slider__item" src="./images/slider-pictures/item3.png" alt="">
+                        <img class="slider__item" src="./images/slider-pictures/item5.png" alt="">
+                        <img class="slider__item" src="./images/slider-pictures/item13.png" alt="">
+                        <img class="slider__item" src="./images/slider-pictures/item.png" alt="">
+                        <img class="slider__item" src="./images/slider-pictures/item2.png" alt="">
+                        <img class="slider__item" src="./images/slider-pictures/item5.png" alt="">
                     </div>
                 </div>
             </div>
@@ -252,7 +284,10 @@
             </div>
         </footer>
     </div>
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
     <script src="./js/slider.js"></script>
+    <script src="./js/scroller.js"></script>
+
 </body>
 
 </html>

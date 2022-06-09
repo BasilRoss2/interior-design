@@ -5,8 +5,8 @@ const sliderSwitcher2 = document.querySelector('#b-top__slder-switcher-2');
 const sliderSwitcher3 = document.querySelector('#b-top__slder-switcher-3');
 const activeSwitcherClass = 'b-top__slder-switcher_active';
 const backgroundOne = 'center / cover no-repeat url(../images/b-top-background.jpg) scroll';
-const backgroundTwo= 'center / cover no-repeat url(../images/b-top-background-2.jpg) scroll';
-const backgroundThree= 'center / cover no-repeat url(../images/b-top-background-3.jpg) scroll';
+const backgroundTwo = 'center / cover no-repeat url(../images/b-top-background-2.jpg) scroll';
+const backgroundThree = 'center / cover no-repeat url(../images/b-top-background-3.jpg) scroll';
 
 function switcherDisable() {
     backgroundSwitchers.forEach(switcher => {
@@ -41,4 +41,6 @@ sliderSwitcher2.addEventListener('click', changeBackground2);
 
 sliderSwitcher3.addEventListener('click', changeBackground3);
 
-
+AOS.init({
+    duration: 1200,
+})
