@@ -34,6 +34,10 @@
     <div class="item" data-aos="flip-left">11</div>-->
 
     <div class="page-wrapper">
+        <div class="overlay fade"></div>
+        <div class="popup fade">
+            <button class="close-button"></button>
+        </div>
         <div class="b-top">
             <header class="header">
                 <img src="./images/logo.svg" alt="logo" class="header__logo">
@@ -74,9 +78,9 @@
                 </div>
             </div>
         </div>
-        <div class="b-moodboard" data-aos="slide-up">
+        <div class="b-moodboard">
             <div class="b-moodboard__wrapper">
-                <div class="b-moodboard__content-container">
+                <div class="b-moodboard__content-container" data-aos="fade-right">
                     <div class="b-moodboard__text-container">
                         <h2 class="block-header b-moodboard__header">Дизайн и покупка в одном месте</h2>
                         <p class="block-text b-moodboard__text">Создавайте мудборды с товарами из каталога. Получите мгновенные расценки, включая стоимость доставки. Отслеживайте заказы от завода к месту от каждого поставщика.</p>
@@ -87,7 +91,7 @@
                     </div>
                 </div>
             </div>
-            <div class="b-moodboard__image">
+            <div class="b-moodboard__image" data-aos="fade-left">
                 <img src="./images/moodboard/interior.jpg" alt="interior">
             </div>
         </div>
@@ -154,7 +158,7 @@
         <div class="b-dummy">
 
         </div>
-        <div class="b-advantages">
+        <div class="b-advantages" data-aos="slide-up">
             <div class="b-advantages__container">
                 <h3 class="small-header b-advantages__container-header">650+ брендов</h3>
                 <p class="block-text b-advantages__container-text">Просмотрите миллионы продуктов от ведущих мировых брендов.</p>
@@ -169,10 +173,10 @@
             </div>
         </div>
         <div class="b-about-us">
-            <div class="b-about-us__image-container">
+            <div class="b-about-us__image-container" data-aos="fade-right">
                 <img class="b-about-us__image" src="./images/about-us/about-us.jpg" alt="Two girls one guy">
             </div>
-            <div class="b-about-us__text-container">
+            <div class="b-about-us__text-container" data-aos="fade-left">
                 <h2 class="block-header b-about-us__header">Наша команда позаботиться о вашем комфорте</h2>
                 <p class="block-text b-about-us__text">У вас есть одно контактное лицо - мы. Мы займемся каждым поставщиком и всем управлением. Установка на месте, включая сборку, размещение, снятие зацепов и удаление упаковки. Мы объединим заказы от нескольких поставщиков и доставим их по
                     необходимости.
@@ -182,7 +186,7 @@
         </div>
         <div class="b-testimonials">
             <h2 class="block-header b-testimonials__header">Отзывы</h2>
-            <div class="b-testimonials__testimonial-container">
+            <div class="b-testimonials__testimonial-container" data-aos="fade-right">
                 <div class="testimonial-container__photo">
                     <img src="./images/testimonials-photo/kirill.png" alt="kirill">
                 </div>
@@ -192,7 +196,7 @@
                         решения радуют нас ежедневно.</p>
                 </div>
             </div>
-            <div class="b-testimonials__testimonial-container b-testimonials__testimonial-container_reverse">
+            <div class="b-testimonials__testimonial-container b-testimonials__testimonial-container_reverse" data-aos="fade-left">
                 <div class="testimonial-container__photo testimonial-container__photo_reverse">
                     <img src="./images/testimonials-photo/petr.png" alt="Petr">
                 </div>
@@ -204,7 +208,7 @@
                     </p>
                 </div>
             </div>
-            <div class="b-testimonials__testimonial-container">
+            <div class="b-testimonials__testimonial-container" data-aos="fade-right">
                 <div class="testimonial-container__photo">
                     <img src="./images/testimonials-photo/alina.png" alt="Alina">
                 </div>
@@ -216,7 +220,7 @@
                     </p>
                 </div>
             </div>
-            <div class="b-testimonials__testimonial-container b-testimonials__testimonial-container_reverse">
+            <div class="b-testimonials__testimonial-container b-testimonials__testimonial-container_reverse" data-aos="fade-left">
                 <div class="testimonial-container__photo testimonial-container__photo_reverse">
                     <img src="./images/testimonials-photo/maria.png" alt="Maria">
                 </div>
@@ -228,7 +232,7 @@
                 </div>
             </div>
         </div>
-        <div class="b-projects">
+        <div class="b-projects" data-aos="fade-up">
             <div class="b-projects__header-container">
                 <h2 class="block-header b-projects__header">Проекты</h2>
                 <div class="b-projects__slider-navigation">
@@ -249,25 +253,53 @@
                         <img src="./images/projects/ss70.jpg" alt="ss70">
                     </div>
                     <h3 class="small-header slider-slide__header">SS70</h3>
-                    <p class="block-text slider-slide__text">Эти апартаменты, на 79-м этаже башни Федерация в Москва-Сити, предназначены для посуточной аренды в AirBnB. Каждый желающий сможет тут переночевать.</p>
+                    <p class="block-text slider-slide__text">Эта квартира в ЖК Сердце столицы, ещё в процессе согласования. И, чем дальше мы двигаемся по правкам, тем больше клиент склоняется к первому варианту</p>
                 </div>
                 <div class="b-projects__slider-slide">
                     <div class="b-slider-slide__image">
                         <img src="./images/projects/voron.jpg" alt="voron 170">
                     </div>
                     <h3 class="small-header slider-slide__header">Voron, 170 </h3>
-                    <p class="block-text slider-slide__text">Эти апартаменты, на 79-м этаже башни Федерация в Москва-Сити, предназначены для посуточной аренды в AirBnB. Каждый желающий сможет тут переночевать.</p>
+                    <p class="block-text slider-slide__text">Стена за телевизором, это архитектурный бетон. По заказу клиента выполненный в стилистике природного камня.</p>
                 </div>
                 <div class="b-projects__slider-slide">
                     <div class="b-slider-slide__image">
                         <img src="./images/projects/studio.jpg" alt="Studio 80">
                     </div>
                     <h3 class="small-header slider-slide__header">Studio, 80</h3>
+                    <p class="block-text slider-slide__text">Квартира без стен с единым пространством, открытым потолком и темными стенами, с акцентом на центральную колонну.</p>
+                </div>
+                <div class="b-projects__slider-slide">
+                    <div class="b-slider-slide__image">
+                        <img src="./images/projects/moscow-city.jpg" alt="moscow-city">
+                    </div>
+                    <h3 class="small-header slider-slide__header">Москва-Сити</h3>
                     <p class="block-text slider-slide__text">Эти апартаменты, на 79-м этаже башни Федерация в Москва-Сити, предназначены для посуточной аренды в AirBnB. Каждый желающий сможет тут переночевать.</p>
+                </div>
+                <div class="b-projects__slider-slide">
+                    <div class="b-slider-slide__image">
+                        <img src="./images/projects/ss70.jpg" alt="ss70">
+                    </div>
+                    <h3 class="small-header slider-slide__header">SS70</h3>
+                    <p class="block-text slider-slide__text">Эта квартира в ЖК Сердце столицы, ещё в процессе согласования. И, чем дальше мы двигаемся по правкам, тем больше клиент склоняется к первому варианту</p>
+                </div>
+                <div class="b-projects__slider-slide">
+                    <div class="b-slider-slide__image">
+                        <img src="./images/projects/voron.jpg" alt="voron 170">
+                    </div>
+                    <h3 class="small-header slider-slide__header">Voron, 170 </h3>
+                    <p class="block-text slider-slide__text">Стена за телевизором, это архитектурный бетон. По заказу клиента выполненный в стилистике природного камня.</p>
+                </div>
+                <div class="b-projects__slider-slide">
+                    <div class="b-slider-slide__image">
+                        <img src="./images/projects/studio.jpg" alt="Studio 80">
+                    </div>
+                    <h3 class="small-header slider-slide__header">Studio, 80</h3>
+                    <p class="block-text slider-slide__text">Квартира без стен с единым пространством, открытым потолком и темными стенами, с акцентом на центральную колонну.</p>
                 </div>
             </div>
         </div>
-        <div class="b-lead-form">
+        <div class="b-lead-form" data-aos="fade-up">
             <h2 class="block-header b-lead-form__header">Оставьте ваш Email и мы свяжемся с вами</h2>
             <form action="#" method="post" class="b-lead-form__lead-form">
                 <input type="email" name="email" id="leadEmail" class="lead-form__field" placeholder="E-mail">
@@ -286,8 +318,8 @@
     </div>
     <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
     <script src="./js/slider.js"></script>
-    <script src="./js/scroller.js"></script>
-
+    <script src="./js/bottom-slider.js"></script>
+    <script src="./js/popup.js"></script>
 </body>
 
 </html>
