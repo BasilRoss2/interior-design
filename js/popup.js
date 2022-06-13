@@ -3,6 +3,25 @@ document.addEventListener('DOMContentLoaded', () => {
 })
 
 function initPopup() {
-    const openPopupElements = document.querySelectorAll('.overlay .popup');
-    const visibleClasses = 'visible';
+    const openPopupElements = document.querySelectorAll('.overlay, .popup');
+    const visibleClass = 'visible';
+
+    const popupLinks = document.querySelectorAll('.js-popup-button');
+
+    popupLinks.forEach(popupLink => {
+        popupLink.addEventListener('click', () => {
+            openPopupElements.forEach(element => {
+                element.classList.add(visibleClass);
+            })
+        });
+    })
+
+    const closePopupElements = document.querySelectorAll('.overlay, .close-button')
+    closePopupElements.forEach(closePopupElement => {
+        closePopupElement.addEventListener('click', () => {
+            openPopupElements.forEach(element => {
+                element.classList.remove(visibleClass)
+            })
+        })
+    })
 }

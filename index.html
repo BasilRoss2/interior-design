@@ -37,6 +37,11 @@
         <div class="overlay fade"></div>
         <div class="popup fade">
             <button class="close-button"></button>
+            <form class="form" action="#" method="post">
+                <input class="form__text-box" type="text" placeholder="Ваше имя" name="leadName" id="leadName">
+                <input class="form__text-box" type="email" placeholder="Ваш Email" name="leadEmail" id="leadEmail">
+                <input class="button button_thick" type="submit" value="Отправить">
+            </form>
         </div>
         <div class="b-top">
             <header class="header">
@@ -50,7 +55,7 @@
             </header>
             <div class="b-top__content">
                 <h1 class="b-top__header">Дизайн интерьера от картинки до реализации </h1>
-                <button class="button button_transparent">Заказать дизайн</button>
+                <button class="button button_transparent js-popup-button">Заказать дизайн</button>
             </div>
             <div class="b-top__slider">
                 <span class="b-top__slder-switcher b-top__slder-switcher_active" id="b-top__slder-switcher-1"></span>
@@ -91,8 +96,8 @@
                     </div>
                 </div>
             </div>
-            <div class="b-moodboard__image" data-aos="fade-left">
-                <img src="./images/moodboard/interior.jpg" alt="interior">
+            <div class="b-moodboard__image-container" data-aos="fade-left">
+                <img class="b-moodboard__image" src="./images/moodboard/interior.jpg" alt="interior">
             </div>
         </div>
         <div class="b-order-with-slider">
@@ -101,7 +106,7 @@
                 <p class="block-text b-order-with-slider__text">
                     Новый способ для профессионалов интерьера покупать мебель. Просмотрите миллионы продуктов от ведущих мировых брендов.
                 </p>
-                <button class="button button_thick">Заказать дизайн</button>
+                <button class="button button_thick js-popup-button">Заказать дизайн</button>
             </div>
             <div class="b-order-with-slider__slider-container">
                 <div class="b-order-with-slider__slider-head">
@@ -181,7 +186,7 @@
                 <p class="block-text b-about-us__text">У вас есть одно контактное лицо - мы. Мы займемся каждым поставщиком и всем управлением. Установка на месте, включая сборку, размещение, снятие зацепов и удаление упаковки. Мы объединим заказы от нескольких поставщиков и доставим их по
                     необходимости.
                 </p>
-                <button class="button button_thick">Заказать дизайн</button>
+                <button class="button button_thick js-popup-button">Заказать дизайн</button>
             </div>
         </div>
         <div class="b-testimonials">
@@ -243,56 +248,56 @@
             <div class="b-projects__slider">
                 <div class="b-projects__slider-slide">
                     <div class="b-slider-slide__image">
-                        <img src="./images/projects/moscow-city.jpg" alt="moscow-city">
+                        <img class="slide-image" src="./images/projects/moscow-city.jpg" alt="moscow-city">
                     </div>
                     <h3 class="small-header slider-slide__header">Москва-Сити</h3>
                     <p class="block-text slider-slide__text">Эти апартаменты, на 79-м этаже башни Федерация в Москва-Сити, предназначены для посуточной аренды в AirBnB. Каждый желающий сможет тут переночевать.</p>
                 </div>
                 <div class="b-projects__slider-slide">
                     <div class="b-slider-slide__image">
-                        <img src="./images/projects/ss70.jpg" alt="ss70">
+                        <img class="slide-image" src="./images/projects/ss70.jpg" alt="ss70">
                     </div>
                     <h3 class="small-header slider-slide__header">SS70</h3>
                     <p class="block-text slider-slide__text">Эта квартира в ЖК Сердце столицы, ещё в процессе согласования. И, чем дальше мы двигаемся по правкам, тем больше клиент склоняется к первому варианту</p>
                 </div>
                 <div class="b-projects__slider-slide">
                     <div class="b-slider-slide__image">
-                        <img src="./images/projects/voron.jpg" alt="voron 170">
+                        <img class="slide-image" src="./images/projects/voron.jpg" alt="voron 170">
                     </div>
                     <h3 class="small-header slider-slide__header">Voron, 170 </h3>
                     <p class="block-text slider-slide__text">Стена за телевизором, это архитектурный бетон. По заказу клиента выполненный в стилистике природного камня.</p>
                 </div>
                 <div class="b-projects__slider-slide">
                     <div class="b-slider-slide__image">
-                        <img src="./images/projects/studio.jpg" alt="Studio 80">
+                        <img class="slide-image" src="./images/projects/studio.jpg" alt="Studio 80">
                     </div>
                     <h3 class="small-header slider-slide__header">Studio, 80</h3>
                     <p class="block-text slider-slide__text">Квартира без стен с единым пространством, открытым потолком и темными стенами, с акцентом на центральную колонну.</p>
                 </div>
                 <div class="b-projects__slider-slide">
                     <div class="b-slider-slide__image">
-                        <img src="./images/projects/moscow-city.jpg" alt="moscow-city">
+                        <img class="slide-image" src="./images/projects/moscow-city.jpg" alt="moscow-city">
                     </div>
                     <h3 class="small-header slider-slide__header">Москва-Сити</h3>
                     <p class="block-text slider-slide__text">Эти апартаменты, на 79-м этаже башни Федерация в Москва-Сити, предназначены для посуточной аренды в AirBnB. Каждый желающий сможет тут переночевать.</p>
                 </div>
                 <div class="b-projects__slider-slide">
                     <div class="b-slider-slide__image">
-                        <img src="./images/projects/ss70.jpg" alt="ss70">
+                        <img class="slide-image" src="./images/projects/ss70.jpg" alt="ss70">
                     </div>
                     <h3 class="small-header slider-slide__header">SS70</h3>
                     <p class="block-text slider-slide__text">Эта квартира в ЖК Сердце столицы, ещё в процессе согласования. И, чем дальше мы двигаемся по правкам, тем больше клиент склоняется к первому варианту</p>
                 </div>
                 <div class="b-projects__slider-slide">
                     <div class="b-slider-slide__image">
-                        <img src="./images/projects/voron.jpg" alt="voron 170">
+                        <img class="slide-image" src="./images/projects/voron.jpg" alt="voron 170">
                     </div>
                     <h3 class="small-header slider-slide__header">Voron, 170 </h3>
                     <p class="block-text slider-slide__text">Стена за телевизором, это архитектурный бетон. По заказу клиента выполненный в стилистике природного камня.</p>
                 </div>
                 <div class="b-projects__slider-slide">
                     <div class="b-slider-slide__image">
-                        <img src="./images/projects/studio.jpg" alt="Studio 80">
+                        <img class="slide-image" src="./images/projects/studio.jpg" alt="Studio 80">
                     </div>
                     <h3 class="small-header slider-slide__header">Studio, 80</h3>
                     <p class="block-text slider-slide__text">Квартира без стен с единым пространством, открытым потолком и темными стенами, с акцентом на центральную колонну.</p>
