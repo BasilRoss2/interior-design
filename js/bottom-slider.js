@@ -1,15 +1,21 @@
-const slidesToShow = 4;
+let slidesToShow = 4;
 const slidesToScroll = 1;
 const slider = document.querySelector('.b-projects');
 const sliderSlides = document.querySelector('.b-projects__slider');
 const buttonPrev = document.querySelector('.slider__arrow_back');
 const buttonNext = document.querySelector('.slider__arrow_forward');
 const slides = document.querySelectorAll('.b-projects__slider-slide');
-const slideWidth = sliderSlides.clientWidth / slidesToShow;
 
+const page = document.querySelector('.page-wrapper');
+let pageWidth = page.clientWidth;
 
+if (pageWidth < 1370)
+    slidesToShow = 3;
+
+let slideWidth = sliderSlides.clientWidth / slidesToShow;
 
 let position = 0;
+
 
 buttonNext.addEventListener('click', activateButtonNext);
 
@@ -22,7 +28,7 @@ function setSlideWidth() {
 
 
 function checkPrevButton() {
-    if (position == 0) {
+    if (position >= 0) {
         buttonPrev.classList.add('slider__arrow_disabled');
         buttonPrev.removeEventListener('click', activateButtonPrev);
     } else {

@@ -421,7 +421,8 @@
     /*advantages*/
     
     .b-advantages {
-        padding: 7% 15%;
+        margin: 150px auto;
+        max-width: 1240px;
         display: flex;
         justify-content: space-between;
         align-content: center;
@@ -439,6 +440,7 @@
     
     .b-about-us {
         display: flex;
+        flex-direction: row;
     }
     
     .b-about-us__image-container {
@@ -450,7 +452,8 @@
     }
     
     .b-about-us__text-container {
-        padding: 123px 135px 0 160px;
+        padding: 123px 135px 273px 160px;
+        max-width: 50%;
     }
     
     .b-about-us__header {
@@ -651,5 +654,14 @@
         }
         .b-projects {
             max-width: 1700px;
+        }
+    }
+    
+    @media screen and (max-width: 1370px) {
+        .b-testimonials {
+            padding: 131px 15% 96px 15%;
+        }
+        .b-about-us__text-container {
+            background-color: #fff;
         }
     }
