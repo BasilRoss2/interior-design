@@ -16,6 +16,9 @@ if (pageWidth < 1370)
 if (pageWidth < 1000)
     slidesToShow = 2;
 
+if (pageWidth < 500)
+    slidesToShow = 1;
+
 let slideWidth = sliderSlides.clientWidth / slidesToShow;
 
 let position = 0;

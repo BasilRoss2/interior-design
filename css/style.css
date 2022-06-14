@@ -149,6 +149,14 @@
         min-width: 25%;
     }
     
+    .mobile-menu-icon {
+        display: none;
+    }
+    
+    .mobile-menu {
+        display: none;
+    }
+    
     .menu__link {
         text-decoration: none;
         font: 500 18px/18px 'Montserrat', sans-serif;
@@ -658,10 +666,225 @@
     }
     
     @media screen and (max-width: 1370px) {
+        .b-moodboard__content-container {
+            max-width: 500px;
+        }
+        .b-moodboard__front-images {
+            display: none;
+        }
         .b-testimonials {
             padding: 131px 15% 96px 15%;
         }
         .b-about-us__text-container {
             background-color: #fff;
+        }
+    }
+    
+    @media screen and (max-width: 1080px) {
+        .b-top {
+            padding: 0;
+            height: auto;
+        }
+        .header {
+            margin: auto;
+            margin-top: 20px;
+            padding-bottom: 15px;
+            width: 90%;
+        }
+        .menu__link {
+            margin-left: 30px;
+        }
+        .b-top__content {
+            margin: 40px 0 50px 40px;
+        }
+        .b-top__slider {
+            display: none;
+        }
+        .b-sequence {
+            padding-top: 30px;
+        }
+        .b-secuence__header {
+            margin-bottom: 100px;
+        }
+        .b-secuence__header::after {
+            bottom: -46px;
+            left: 38%;
+        }
+        .b-secuence__header::before {
+            top: -46px;
+            left: 38%;
+        }
+        .b-sequence__wrapper {
+            flex-direction: column;
+            justify-content: center;
+            max-width: 90%;
+        }
+        .b-sequence__container {
+            max-width: 100%;
+        }
+        .b-moodboard {
+            max-width: 100%;
+        }
+        .b-moodboard__wrapper {
+            flex-direction: column;
+            max-width: 90%;
+            margin: auto;
+            text-align: center;
+        }
+        .b-moodboard__content-container {
+            position: relative;
+            padding-bottom: 0px;
+            max-width: 100%;
+        }
+        .b-moodboard__image-container {
+            display: none;
+        }
+        .b-moodboard__text-container {
+            width: 100%;
+        }
+        .b-order-with-slider__text-wrapper {
+            margin-bottom: 92px;
+        }
+        .b-order-with-slider__slider-container {
+            width: 90%;
+        }
+        .slider__column {
+            padding-left: 10px;
+            padding-right: 15px;
+        }
+        .b-advantages {
+            margin: 75px auto 0;
+            flex-direction: column;
+            width: 90%;
+            align-items: center;
+        }
+        .b-advantages__container {
+            margin-bottom: 75px;
+        }
+        .b-about-us__text-container {
+            padding: 100px 70px;
+        }
+        .b-testimonials {
+            padding: 100px 5% 60px;
+        }
+        .b-projects {
+            margin: 50px 5%;
+        }
+        .b-lead-form {
+            max-width: 80%;
+        }
+    }
+    
+    @media screen and (max-width: 480px) {
+        .header__menu {
+            display: none;
+        }
+        .mobile-menu {
+            display: block;
+        }
+        .mobile-menu-icon::after {
+            top: 100px;
+            display: block;
+            position: absolute;
+            content: '';
+            height: 3px;
+            width: 35px;
+            background-color: #FFF;
+            top: 10px;
+        }
+        .mobile-menu-icon {
+            top: 30px;
+            right: 30px;
+            display: block;
+            position: absolute;
+            content: '';
+            height: 3px;
+            width: 35px;
+            background-color: #FFF;
+            bottom: -10px;
+            z-index: 4;
+        }
+        .mobile-menu-icon::before {
+            top: 20px;
+            display: block;
+            position: absolute;
+            content: '';
+            height: 3px;
+            width: 35px;
+            background-color: #FFF;
+            bottom: -10px;
+        }
+        .mobile-menu__list {
+            position: absolute;
+            text-align: center;
+            margin-left: 40px;
+            width: 70%;
+            top: 20px;
+            left: 5px;
+            border: 1px solid #DDE0E5;
+            box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.25);
+            border-radius: 6px;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(100px);
+            transition: all .3s ease;
+            background-color: #FFF;
+            list-style-type: none;
+            z-index: 3;
+        }
+        .mobile-menu__list.menu_visible {
+            display: block;
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+        .mobile-menu__link {
+            text-decoration: none;
+            font: 30px/3 'Montserrat', sans-serif;
+            color: rgba(0, 0, 0, 0.7);
+        }
+        .b-top__content {
+            max-width: 100%;
+            height: 70vh;
+        }
+        .b-top__header {
+            margin-top: 40px;
+        }
+        .b-secuence__header::after {
+            bottom: -46px;
+            left: 18%;
+        }
+        .b-secuence__header::before {
+            top: -46px;
+            left: 18%;
+        }
+        .b-moodboard {
+            padding: 150px 0;
+        }
+        .slider__column {
+            padding: 5px 10px;
+        }
+        .b-about-us__image-container {
+            display: none;
+        }
+        .testimonial-container__photo {
+            display: none;
+        }
+        .b-lead-form__header {
+            font-size: 30px;
+        }
+        .b-lead-form__lead-form {
+            flex-direction: column;
+        }
+        .lead-form__field {
+            border-radius: 5px 5px 0 0;
+        }
+        .lead-form__button {
+            width: 331px;
+            border-radius: 0 0 5px 5px;
+        }
+        .b-footer {
+            margin: auto;
+            width: 90%;
         }
     }
