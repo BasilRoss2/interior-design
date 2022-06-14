@@ -25,7 +25,6 @@ function changeBackground2() {
     topBackgroundImage.style.background = backgroundTwo;
     switcherDisable();
     sliderSwitcher2.classList.add(activeSwitcherClass);
-
 }
 
 function changeBackground3() {

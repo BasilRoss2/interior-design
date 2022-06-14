@@ -12,6 +12,10 @@ let pageWidth = page.clientWidth;
 if (pageWidth < 1370)
     slidesToShow = 3;
 
+
+if (pageWidth < 1000)
+    slidesToShow = 2;
+
 let slideWidth = sliderSlides.clientWidth / slidesToShow;
 
 let position = 0;
@@ -28,7 +32,7 @@ function setSlideWidth() {
 
 
 function checkPrevButton() {
-    if (position >= 0) {
+    if (position > -1) {
         buttonPrev.classList.add('slider__arrow_disabled');
         buttonPrev.removeEventListener('click', activateButtonPrev);
     } else {
