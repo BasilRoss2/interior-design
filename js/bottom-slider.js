@@ -9,9 +9,8 @@ const slides = document.querySelectorAll('.b-projects__slider-slide');
 const page = document.querySelector('.page-wrapper');
 let pageWidth = page.clientWidth;
 
-if (pageWidth < 1370)
+if (pageWidth < 1540)
     slidesToShow = 3;
-
 
 if (pageWidth < 1000)
     slidesToShow = 2;
